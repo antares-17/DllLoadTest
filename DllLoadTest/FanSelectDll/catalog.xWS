@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Workspace version="0.1">
+	<SystemProperties>
+		<Company name="EasyKat" address="Company address"/>
+		<Home path=".\"/>
+	</SystemProperties>
+	<Catalog name="Ziehl-Abegg" editor="N. Rixecker" title="$HTML_TITLE$" version="v.1.0" AutostartInternetServer="false" InternetServerInCDmode="true" CdSocketMode="true" UseTextsDtx="false" port="-1" width="1036" height="748" resize="false" debug="false" KEEPPREVXML="true" NOCENTERWINDOW="true">
+		<easygui path="$PROGDIR$\easyguixp" version="xp"/>
+		<DefaultLanguage id="DE"/>
+		<Encoding screen="utf-8" rtf="utf-8"/>
+	    <UI system="easyguixp" internaltransform="true" formatoutput="true" _browser="mozilla" _browser_path="plugin/mozilla-1.9"/>
+	    <SocketServer gzip_encoding="true" log_file_requests="false" bandwidth_limit="0" direct_cleanup="true" listen_to="localhost"/>
+		<Session timeout_sec="900"/>
+		<EasyScript show_error_messages="true" cachechecksec="1800"/>
+
+		<ZA logfile="false" chartviewer_url="http://fanselect.net/" pim_mode="false" standalone_dll="true"/>
+
+		<LoadTest disabled="true"/>
+		<Database storagetype="array" name="RELEASE01_DB" connect="SQLITE;:cerod::$PROGDIR$\Catalog\DB\release01.db3"/>
+		<Database storagetype="array" name="RELEASE02_DB" connect="SQLITE;:cerod::$PROGDIR$\Catalog\DB\release02.db3"/>
+		<DefaultDatabase id="RELEASE01_DB"/>
+
+		<!-- $PROGDIR$ = Programmpfad $TEMP$=Standard Windows Temp Verzeichnis -->
+		<Alias storagetype="array" name="tmp" path="$TEMP$\HTMLTEMP"/>
+
+		<!-- Spezielle Aliase -->
+		<Alias storagetype="array" name="EKAnfragen" path="$PROGDIR$\catalog\Anfragen"/>
+		<Alias storagetype="array" name="EKImage" path="$PROGDIR$\catalog\System\STATIC_IMAGES"/>
+		<Alias storagetype="array" name="EKHelp" path="$PROGDIR$\catalog\System\Help"/>
+		<Alias storagetype="array" name="EKScript" path="$PROGDIR$\catalog\System\SCRIPTS_CLIENT"/>
+		<Alias storagetype="array" name="EKCSS" path="$PROGDIR$\catalog\System\STYLESHEETS"/>
+		<Alias storagetype="array" name="EKTemp" path="$TEMP$\HTMLTEMP" REGFSREF="true"/>
+ 		<Alias storagetype="array" name="easyguixp" path="$PROGDIR$\easyguiXP"/>
+ 		<Alias storagetype="array" name="gfx" path="$PROGDIR$\easyguiXP\gfx"/>
+	</Catalog>
+
+  <MIMETYPE>
+    <!-- html, javascript, css, ... -->
+    <js type="application/x-javascript" expires="1" cachecontrol="public, max-age=1" gzip_encoding="true"/>
+    <jslib type="application/x-javascript" expires="1" cachecontrol="public, max-age=1" gzip_encoding="true"/>
+
+    <css type="text/css" expires="1"  cachecontrol="public, max-age=1" gzip_encoding="true"/>
+    <htm type="text/html" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <html type="text/html" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <xht type="application/xhtml+xml" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <xhtml type="application/xhtml+xml" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <xul type="application/vnd.mozilla.xul+xml" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+
+    <!-- images -->
+    <png type="image/png" expires="3600" cachecontrol="public, max-age=3600"/>
+    <gif type="image/gif" expires="3600" cachecontrol="public, max-age=3600"/>
+    <jpeg type="image/jpeg" expires="3600" cachecontrol="public, max-age=3600"/>
+    <jpg type="image/jpeg" expires="3600" cachecontrol="public, max-age=3600"/>
+    <jpe type="image/jpeg" expires="3600" cachecontrol="public, max-age=3600"/>
+    <ief type="image/ief" expires="3600" cachecontrol="public, max-age=3600"/>
+    <tiff type="image/tiff" expires="3600" cachecontrol="public, max-age=3600"/>
+    <tif type="image/tiff" expires="3600" cachecontrol="public, max-age=3600"/>
+    <bmp type="image/bmp" expires="3600" cachecontrol="public, max-age=3600"/>
+
+    <!-- text -->
+    <asc type="text/plain" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <txt type="text/plain" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <csv type="text/csv" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+
+    <!-- xml -->
+    <xml type="text/xml" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+    <xsl type="text/xml" expires="1" cachecontrol="no-store, no-cache" gzip_encoding="true"/>
+
+    <!-- external document types -->
+    <rtf type="application/msword" expires="5" cachecontrol="public, max-age=5" gzip_encoding="true"/>
+    <zip type="application/zip" expires="5" cachecontrol="public, max-age=5"/>
+    <dxf type="application/dxf" expires="5" cachecontrol="public, max-age=5"/>
+    <pdf type="application/pdf" expires="600" cachecontrol="public, max-age=600"/>
+    <doc type="application/msword" expires="600" cachecontrol="public, max-age=600"/>
+    <xls type="application/vnd.ms-excel" expires="5" cachecontrol="public, max-age=5"/>
+    <ppt type="application/vnd.ms-powerpoint" expires="5" cachecontrol="public, max-age=5"/>
+
+    <!-- misc -->
+    <exe type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <dll type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <bin type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <rar type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <_7z type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <db type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <db3 type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <class type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <so type="application/octet-stream" expires="3600" cachecontrol="public, max-age=3600"/>
+    <avi type="video/x-msvideo" expires="3600" cachecontrol="public, max-age=3600"/>
+    <mpeg type="video/mpeg" expires="3600" cachecontrol="public, max-age=3600"/>
+    <mpg type="video/mpeg" expires="3600" cachecontrol="public, max-age=3600"/>
+    <mpe type="video/mpeg" expires="3600" cachecontrol="public, max-age=3600"/>
+    <qt type="video/quicktime" expires="3600" cachecontrol="public, max-age=3600"/>
+    <mov type="video/quicktime"	expires="3600" cachecontrol="public, max-age=3600"/>
+  </MIMETYPE>
+
+</Workspace>

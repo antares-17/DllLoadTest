@@ -1,0 +1,44 @@
+easyKAT V2.4 2185 (Jan 10 2020)
+[2024-06-13 12:06:33] 0000.029: [Error: init script missing or unreadable (encrypted)]
+[2024-06-13 12:06:33] 0000.029: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:06:33] 0000.029: CEKCatalogSystem::StopSession() delete session 'SN0'
+[2024-06-13 12:06:33] 0000.029: EKInternetSession::DeleteData() delete script session 'SN0'
+[2024-06-13 12:06:33] 0000.030: EKInternetSession::DeleteData() delete storage session 'SN0'
+[2024-06-13 12:06:33] 0000.030: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:06:33] 0000.030: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:06:33] 0000.030: [EASYSCRIPT: clear cache...  1 nodes killed, 0 nodes left]
+[2024-06-13 12:06:33] 0000.030: [EASYSCRIPT: ParserBase::DeleteThreadContext]
+[2024-06-13 12:06:33] 0000.031: [EKStringtable: m_KeyStringMap.size() = 553]
+easyKAT V2.4 2185 (Jan 10 2020)
+[2024-06-13 12:07:09] 0000.028: [Error: init script missing or unreadable (encrypted)]
+[2024-06-13 12:07:09] 0000.028: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:07:09] 0000.028: CEKCatalogSystem::StopSession() delete session 'SN0'
+[2024-06-13 12:07:09] 0000.028: EKInternetSession::DeleteData() delete script session 'SN0'
+[2024-06-13 12:07:09] 0000.028: EKInternetSession::DeleteData() delete storage session 'SN0'
+[2024-06-13 12:07:09] 0000.028: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:07:09] 0000.028: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:07:09] 0000.028: [EASYSCRIPT: clear cache...  1 nodes killed, 0 nodes left]
+[2024-06-13 12:07:09] 0000.028: [EASYSCRIPT: ParserBase::DeleteThreadContext]
+[2024-06-13 12:07:09] 0000.028: [EKStringtable: m_KeyStringMap.size() = 553]
+easyKAT V2.4 2185 (Jan 10 2020)
+[2024-06-13 12:09:26] 0000.037: [Error: init script missing or unreadable (encrypted)]
+[2024-06-13 12:09:26] 0000.037: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:09:26] 0000.037: CEKCatalogSystem::StopSession() delete session 'SN0'
+[2024-06-13 12:09:26] 0000.037: EKInternetSession::DeleteData() delete script session 'SN0'
+[2024-06-13 12:09:26] 0000.037: EKInternetSession::DeleteData() delete storage session 'SN0'
+[2024-06-13 12:09:26] 0000.037: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:09:26] 0000.038: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:09:26] 0000.038: [EASYSCRIPT: clear cache...  1 nodes killed, 0 nodes left]
+[2024-06-13 12:09:26] 0000.038: [EASYSCRIPT: ParserBase::DeleteThreadContext]
+[2024-06-13 12:09:26] 0000.038: [EKStringtable: m_KeyStringMap.size() = 553]
+easyKAT V2.4 2185 (Jan 10 2020)
+[2024-06-13 12:10:03] 0000.032: [Error: init script missing or unreadable (encrypted)]
+[2024-06-13 12:10:03] 0000.033: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:10:03] 0000.033: CEKCatalogSystem::StopSession() delete session 'SN0'
+[2024-06-13 12:10:03] 0000.033: EKInternetSession::DeleteData() delete script session 'SN0'
+[2024-06-13 12:10:03] 0000.033: EKInternetSession::DeleteData() delete storage session 'SN0'
+[2024-06-13 12:10:03] 0000.033: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:10:03] 0000.033: CEKCatalogSystem::StopSession() 'SN0'
+[2024-06-13 12:10:03] 0000.033: [EASYSCRIPT: clear cache...  1 nodes killed, 0 nodes left]
+[2024-06-13 12:10:03] 0000.033: [EASYSCRIPT: ParserBase::DeleteThreadContext]
+[2024-06-13 12:10:03] 0000.033: [EKStringtable: m_KeyStringMap.size() = 553]

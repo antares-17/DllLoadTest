@@ -1,0 +1,212 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="FanSelectDll\catalog.xWS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\DB\release01.db3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\DB\release02.db3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\plugin\ekplot_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\plugin\gsl_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\plugin\zaplot_plugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\Config.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\DBQuery.es">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\DRAW_CHART.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\EASYGUITRANSFORM.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\EASYGUITRANSFORM_BASE_OBJ.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\HANDLE_REQUEST.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\INIT_CATALOG.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\INIT_SESSION.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\LGS.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ONCLOSE_BROWSER.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\process.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\RUN_CATALOG.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Ausgabe.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_AusgabePdf.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_AusgabeRtf.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Calc.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_CalcAMCA.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_CalcTools.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Chart.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_ChartTools.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Database.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Details.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Details_Kennlinie.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Details_Kennlinie_Sized.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Details_LCC.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Details_Massblatt.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Details_Stempeldaten.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_DllRequest.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_DocumentPdf.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_DocumentRtf.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Doku.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Einheitensystem.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_FileCache.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_KennfeldExport.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Kennlinien.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Konstanten.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Login.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Massblatt.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Merkliste.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_ObserveDllRequest.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Portfolio.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_ProcessDllRequest.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_ProcessZRVDllRequest.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Produktspektrum.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Tables.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_UnitCalc.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Utils.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Ventilatorauswahl.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Vorauswahl.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_WebUpdate.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\catalog\System\SCRIPTS_SERVER\ZA_Zubehoer.b">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\FANselect.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\Product_Price_Reference.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\Product_Price_Reference0.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\Product_Price_Reference1.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\sqlite2ps.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="FanSelectDll\sqlite3ps.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FanSelectDll\" />
+  </ItemGroup>
+
+</Project>
