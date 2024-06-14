@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
-using System;
 using System.Runtime.InteropServices;
 
 namespace DllLoadTest.Controllers
@@ -14,8 +12,17 @@ namespace DllLoadTest.Controllers
         [HttpGet(Name = "LoadFanSelectDll")]
         public string GetFanSelect()
         {
-            IntPtr fanSelectDllHandle = LoadLibrary(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FanSelectDll", "FANselect.dll"));
-            string result = fanSelectDllHandle != IntPtr.Zero ? $"Dll handle: {fanSelectDllHandle}" : $"Error: {Marshal.GetLastWin32Error()}";
+            string dllPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "FanSelectDll", "FANselect.dll");
+            string result;
+            if (System.IO.File.Exists(dllPath))
+            {
+                IntPtr fanSelectDllHandle = LoadLibrary(dllPath);
+                result = fanSelectDllHandle != IntPtr.Zero ? $"Dll handle: {fanSelectDllHandle}" : $"Error: {Marshal.GetLastWin32Error()}";
+            }
+            else
+            {
+                result = "Error: dll file does not exist.";
+            }
             return result;
         }
 
